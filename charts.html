@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Everything You Need to Know about Recycling in Alachua County</title>
+		 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"> </script>
+		 <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="js/javascript.js"></script>
+	<link rel="stylesheet" href="styles/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+
+  </head>
+  <body>
+  <div id="name"><h1>Your Guide to Alachua County Recycling</h1></div>
+  <h2>Alachua County Shows Steady Increase in Recycling</h2>
+
+  <p> Take a look at the charts below. As you can see from the first chart, recycling in Alachua County has increased over time, a positive trend. The increase does not seem to be slowing down or stopping which is another good thing. Perhaps, one day it will surpass landfill waste. Actually, that is the goal of Alachua County. In 2010, Alachua County's solid waste management created a plan to recycle 75% of all waste by 2020. Their goal for 2014 has been met and surpassed, with them recycling 58% of all waste. As you can see from the second chart, you have a lot of options for what you can recycle, but where can you recycle and what specificallycan you recycle? We'll take a look into that on this website.<p>
+  <p>&nbsp;</p>
+  <section id=graphs>
+  <h2> Findings for Alachua County</h2>
+  <div id="container" style="min-width: 310px; height: 400px; margin:0 auto">
+  <script>
+  $(function () {
+    $('#container').highcharts({
+        title: {
+            text: 'Landfill Vs. Recycling for Alachua County Population',
+            x: -20 //center
+        },
+        subtitle: {
+            text: 'Source: alachuacounty.us',
+            x: -20
+        },
+        xAxis: {
+            categories: ['2006', '2007', '2008', '2009', '2010', '2011',
+                '2012', '20013', '2014']
+        },
+        yAxis: {
+            title: {
+                text: ''
+            },
+            plotLines: [{
+                value: 0,
+                width: 1,
+                color: '#808080'
+            }]
+        },
+        tooltip: {
+            valueSuffix: ''
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle',
+            borderWidth: 0
+        },
+        series: [{
+            name: 'Population',
+            data: [ 243779, 247561, 252388,  256232, 247336,  247337, 246770, 248002, 250730]
+        }, {
+            name: 'MSW Landfill (Tons)',
+            data: [221783, 287012, 278333, 226807, 169295, 205310, 174405, 180310, 225711]
+        }, {
+            name: 'MSW Recycled (Tons)',
+            data: [62831, 125248, 111805,  176545,  183708,  205070, 215075, 210552, 309912]
+        } ]
+    });
+});
+  </script>
+  </div>
+  <div id="pichart" style="min-width: 310px; height: 400px; margin: 0 auto">
+  <script>
+$(function () {
+    $('#pichart').highcharts({
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie'
+        },
+        title: {
+            text: 'Recycling in Alachua County for 2013'
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                    style: {
+                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                    }
+                }
+            }
+        },
+        series: [{
+            name: 'Brands',
+            colorByPoint: true,
+            data: [{
+                name: 'Newspaper',
+                y: 7.5
+            }, {
+                name: 'Glass',
+                y: 5.7,
+                sliced: true,
+                selected: true
+            }, {
+                name: 'Aluminum Cans',
+                y: 10.38
+            }, {
+                name: 'Plastic Bottles',
+                y: 4.77
+            }, {
+                name: 'Steel Cans',
+                y: 0.91
+            }, {
+                name: 'Cardboard',
+                y: 0.2
+            }, {
+                name: 'Office Paper',
+                y: 0.2
+            }, {
+                name: 'Yard Trash',
+                y: 0.2
+            }]
+        }]
+    });
+});
+  </script>
+  </div>
+ <p>Statistics found at the  <a href="http://www.dep.state.fl.us/waste" target="_blank">Florida Department of Environmental Protection website</a>.</p>
+ </section>
+<div id='container2'>
+			<div id='title'>
+				<h1>Can You Recycle This?</h1>
+			</div>
+   			<br/>
+  			<div id='quiz'></div>
+    		<div class='button' id='next'><a href='#'>Next</a></div>
+    		<div class='button' id='prev'><a href='#'>Prev</a></div>
+    		<div class='button' id='start'> <a href='#'>Start Over</a></div>
+    		<!-- <button class='' id='next'>Next</a></button>
+    		<button class='' id='prev'>Prev</a></button>
+    		<button class='' id='start'> Start Over</a></button> -->
+    	</div>
+
+		<script type="text/javascript" src='js/javascript.js'></script>
+    <script type='text/javascript' src='js/javascript.js.js'></script> 
+
+<div id="widget"><iframe
+src="http://www2.epa.gov/sites/production/files/widgets/iwarm-tall.html"
+id="iwarm"
+width="355"
+height="385"
+>
+</iframe></div>
+<!--I could not figure out how to make the box unscrollable without the obsolete scroll function. I tried using the overflow function, but it didnt work. Please let me know if you have any suggestions.-->
+<footer><p>Page by Nicole Wiesenthal. Background photo found at <a href="http://www.free-power-point-templates.com/grass-background-powerpoint-template">Free Power Point</a>. Quiz background found at <a href="http://www.demilked.com/free-paper-textures-backgrounds">deMilked</a>. Widget provided by the <a href="http://developer.epa.gov/iwarm-widgets/">EPA</a>.</p></footer>
+  </body>
+</html>
