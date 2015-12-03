@@ -4,6 +4,15 @@ var textbook = '<img src=' + book + ' alt="textbook">';
 var tray = 'images/tray.jpg';
 var food = '<img src=' + tray + ' alt="food tray">';
 
+var pane = 'images/color.jpg';
+var dow = '<img src=' + pane + ' alt="window pane">';
+
+var carton = 'images/carton.jpg';
+var milk = '<img src=' + carton + ' alt="milk carton">';
+
+var yogurt = 'images/yogurt.jpg';
+var yum = '<img src=' + yogurt + ' alt="milk carton">';
+
 
 
 (function() {
@@ -14,17 +23,17 @@ var food = '<img src=' + tray + ' alt="food tray">';
   }, {
     question: food,
     choices: ["Yes", "No"],
-    correctAnswer: "Yes"
+    correctAnswer: "No"
   }, {
-    question: "What is 8*9?",
+    question: dow,
     choices: ["Yes", "No"],
     correctAnswer: "No"
   }, {
-    question: "What is 1*7?",
+    question: milk,
     choices: ["Yes", "No"],
     correctAnswer: "Yes"
   }, {
-    question: "What is 8*8?",
+    question: yum,
     choices: ["Yes", "No"],
     correctAnswer: "Yes"
   }];
@@ -169,7 +178,7 @@ var food = '<img src=' + tray + ' alt="food tray">';
     }
     
     score.append('You got ' + numCorrect + ' questions out of ' +
-                 questions.length + ' right!!! All could be recycled except the pizza box.');
+                 questions.length + ' right!!! Scroll down to see what you missed and learn more.');
     return score;
   }
 })();
