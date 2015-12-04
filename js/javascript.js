@@ -19,23 +19,23 @@ var yum = '<img src=' + yogurt + ' alt="milk carton">';
   var questions = [{
     question: textbook,
     choices: ["Yes", "No"],
-    correctAnswer: "Yes"
+    correctAnswer: 1
   }, {
     question: food,
     choices: ["Yes", "No"],
-    correctAnswer: "No"
+    correctAnswer: 2
   }, {
     question: dow,
     choices: ["Yes", "No"],
-    correctAnswer: "No"
+    correctAnswer: 2
   }, {
     question: milk,
     choices: ["Yes", "No"],
-    correctAnswer: "Yes"
+    correctAnswer: 1
   }, {
     question: yum,
     choices: ["Yes", "No"],
-    correctAnswer: "Yes"
+    correctAnswer: 1
   }];
   
   var questionCounter = 0; //Tracks question number

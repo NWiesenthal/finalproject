@@ -3,7 +3,7 @@
 	   -moz-box-sizing: border-box;
 			box-sizing: border-box;
 }
-body, intro, {
+body, intro {
     background-image: url("../images/greengrass.jpg");
 	background-repeat: no-repeat;
 	background-size:100% 100%;
