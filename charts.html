@@ -47,7 +47,7 @@
                         <a class="page-scroll" href="#services">Interactive: Recycling Quiz and Comparison</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Guide to Where and What You Can Recycle</a>
+                        <a class="page-scroll" href="#contact">Guide to What You Can Recycle</a>
                     </li>
                 </ul>
             </div>
@@ -210,16 +210,15 @@ $(function () {
 					<p> In this part of the website, you can take a quiz to see how well you know what to recycle and how much you can save with what you recycle. Good luck, and happy savings! </p>
 					<div id='container2'>
 			<div id='title'>
-				<h1>Can You Recycle This?</h1>
+				<h1 id='quiztitle'>Can You Recycle This?</h1>
 			</div>
-   			<br/>
   			<div id='quiz'></div>
     		<div class='button' id='next'><a href='#'>Next </a></div>
     		<div class='button' id='prev'><a href='#'>Prev</a></div>
     		<div class='button' id='start'> <a href='#'>Start Over</a></div>
-    		<!-- <button class='' id='next'>Next</a></button>
-    		<button class='' id='prev'>Prev</a></button>
-    		<button class='' id='start'> Start Over</a></button> -->
+    		<!-- <button class='' id='next'>Next </a></button>
+    		<button class='' id='prev'>Prev </a></button>
+    		<button class='' id='start'> Start Over </a></button> -->
     	</div>
 	
 
@@ -244,7 +243,63 @@ height="385"
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Where and What You Can Recycle</h1>
+                    <h1>What You Can Recycle</h1>
+					<p> So, you've taken the quiz and seen what can happen when you recycle. The next step would be to learn what and how you can recycle. First we'll go into a few recycling tips. Then, click on a bin to learn about what you can recycle in it. </p>
+					<ul>
+						<li> <em>Rinse items.</em> If they aren't rinsed, they can't be recycled.</li>
+						<li> <em>Remove lids.</em> They can pose a threat to workers. </li>
+						<li> <em>Crush it.</em> Save space by crushing items. </li>
+					</ul>
+					
+
+<p>Click on the bin to learn what you can recycle in it!</p>
+
+<img id="bluebin" class="recycle"  src="images/recycle.jpeg" alt="Blue Bin">
+<img id="orangebin" class="recycle"  src="images/orange.png" alt="An animal icon">
+
+
+ 
+    <div id="blueStuff"><p><h2 id='bin'>Blue Bin Recycling </h2></p>
+		<div id="blueone"><h3>Plastics</h3>
+	
+		<ul>
+			<li>Containers wth a portable spout or neck up to 2 gallons in size</li>
+			<li>Yogurt cups and margarine tubs </li>
+			<li>Empty bleach bottles</li>
+			<li><b>NO</b> petroleum product</li>
+			<li><b>NO</b> pool chemical</li>
+			<li><b>NO</b> plastic bags</li>
+			<li><b>NO</b> food trays</li>
+			<li><b>NO</b> pesticide conainers
+		</ul>
+		
+		
+		</div>
+		<div id="blue2">
+		<h3>Metal Cans</h3>
+		<ul>
+			<li>Metal food and drink containers with the lid</li>
+			<li>Empty aerosol cans without the lid</li>
+		</ul>
+		<h3>Glass</h3>
+		<ul>
+			<li>Clear, green and brown glass bottles and jars</li>
+			<li><b>NO</b> window panes</li>
+			<li><b>NO</b> glasses</li>
+			<li><b>NO</b> pyrex or other dishes</li>
+		</ul>
+		
+		<h3>Beverage Cartons</h3>
+		<ul>
+			<li>Milk boxes</li>
+			<li>Juice boxes</li>
+			<li>Soy milk containers</li>
+		</ul>
+	</div>
+	</div>
+    <div id="orangeStuff"><p><h2 id='otherbin'>Orange Bin Recycling </h2></p></div>
+
+					
                 </div>
             </div>
         </div>
@@ -252,8 +307,8 @@ height="385"
   
  
 
-<!--I could not figure out how to make the box unscrollable without the obsolete scroll function. I tried using the overflow function, but it didnt work. Please let me know if you have any suggestions.-->
-<footer><p>Page by Nicole Wiesenthal. Background photo found at <a href="http://www.free-power-point-templates.com/grass-background-powerpoint-template">Free Power Point</a>. Quiz background found at <a href="http://www.demilked.com/free-paper-textures-backgrounds">deMilked</a>. Widget provided by the <a href="http://developer.epa.gov/iwarm-widgets/">EPA</a>.</p></footer>
+
+<footer><p>Page by Nicole Wiesenthal. Background photos found at <a href="http://www.free-power-point-templates.com/grass-background-powerpoint-template">Free Power Point</a> and <a href="http://www.demilked.com/free-paper-textures-backgrounds">deMilked</a>. Widget provided by the <a href="http://developer.epa.gov/iwarm-widgets/">EPA</a>.</p></footer>
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->

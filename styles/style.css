@@ -21,6 +21,24 @@ body, intro {
 	font-family: "Oxygen";
 }
 
+#bluebin, #orangebin {
+	width: 40%;
+	height: 30%;
+}
+
+#blueStuff {
+	font-size:120%;
+}
+
+#blueone {
+	float: left;
+	padding-left: 200px;
+}
+
+#blue2 {
+	float:right;
+	padding-right: 100px;
+}
 
 #quiz {
     text-indent: 10px;
@@ -62,7 +80,7 @@ button {
 }
 
 #container2 {
-    width:50%;
+    width:45%;
     margin:auto;
     padding: 0 25px 40px 10px;
 	background-color:#fff;
@@ -112,8 +130,8 @@ ul {
 
 #container2{
 	display: inline-block;
-	width:60%;
-	height: 385px;
+	width:50%;
+	height: 400px;
 	float:right;
 	margin-right:10px;
 	padding-right: 3%;
@@ -134,10 +152,57 @@ body {
   padding:0;
 }
 
-@media(max-width: 652px) {
-	#container { margin-top: 0; margin-bottom: 0; }
-	#top-image-container, img { display: none; }
-	aside { float: none; width: 100%; margin: 0; }
-	article { width: 100%; }
-	#sidebar2 { margin-top: 0; }
+#bin {
+		color: blue;
+	}
+
+#otherbin {
+		color: orange;
+}
+
+@media(max-width: 1000px)
+{
+#container2  {margin-right: 0; padding-right: 0; height: 440 px; }
+#widget {padding-left:0; padding-right: 2px;}
+#quiz {text-indent: 0;}
+#quiztitle {font-size: 40%}
+	.services-section {
+		width: 100%;
+		border: 0;
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		display:block;
+	}
+		#blueone, #blue2 {
+		float:none;
+		display: block;
+		padding: 0;
+	}
+	
+}	
+@media(max-width: 750px) {
+	#widget {display:none;}
+	#title {font-size: 60%;}
+	#pichart, #container2, #container {width: 100%; }
+	#container, #pichart {padding: 0; margin: 0;}
+	
+	.intro-section, .about-section, .services-section, .contact-section {
+		width: 100%;
+		border: 0;
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		
+	}
+	
+
+	
+	p, h1, h2 {
+		text-align: left;
+		display: inline-block;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
 }
