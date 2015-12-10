@@ -25,6 +25,9 @@ html {
     .top-nav-collapse {
         padding: 0;
 	}
+	
+	#quiz {text-indent: 0; font-size: 80%;}
+
 
 	#about, #services, #contact {
 		width: 100%;
@@ -34,7 +37,7 @@ html {
 		display:block;
 		overflow:auto;
 	}
-
+	#quiztitle {font-size: 200%;}
 	}
 
 /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
@@ -61,7 +64,7 @@ of those sections to manage the look and feel of the site. */
 }
 
 .services-section {
-    height: auto%;
+    height: auto;
 	background-image: url("../images/lined.jpg");
 	background-repeat: no-repeat;
 	background-size:100% 100%;

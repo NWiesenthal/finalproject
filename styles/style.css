@@ -21,6 +21,10 @@ body, intro {
 	font-family: "Oxygen";
 }
 
+footer {
+	text-align: center;
+}
+
 #bluebin, #orangebin {
 	width: 40%;
 	height: 30%;
@@ -164,8 +168,8 @@ body {
 {
 #container2  {margin-right: 0; padding-right: 0; height: 440 px; }
 #widget {padding-left:0; padding-right: 2px;}
-#quiz {text-indent: 0; font-size: 100%;}
-#quiztitle {font-size: 300%;}
+#quiz {text-indent: 0; font-size: 80%;}
+
 	.services-section {
 		width: 100%;
 		border: 0;
@@ -184,7 +188,7 @@ body {
 }	
 @media(max-width: 750px) {
 	#widget {display:none;}
-	#title {font-size: 60%;}
+	#title {font-size: 80%;}
 	#pichart, #container2, #container {width: 100%; }
 	#container, #pichart {padding: 0; margin: 0;}
 	
