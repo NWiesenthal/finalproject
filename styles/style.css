@@ -26,16 +26,16 @@ body, intro {
 	height: 30%;
 }
 
-#blueStuff {
+#blueStuff, #orangeStuff {
 	font-size:120%;
 }
 
-#blueone {
+#blueone, #orange1 {
 	float: left;
-	padding-left: 200px;
+	padding-left: 220px;
 }
 
-#blue2 {
+#blue2, #orange2 {
 	float:right;
 	padding-right: 100px;
 }
@@ -164,17 +164,18 @@ body {
 {
 #container2  {margin-right: 0; padding-right: 0; height: 440 px; }
 #widget {padding-left:0; padding-right: 2px;}
-#quiz {text-indent: 0;}
-#quiztitle {font-size: 40%}
+#quiz {text-indent: 0; font-size: 100%;}
+#quiztitle {font-size: 300%;}
 	.services-section {
 		width: 100%;
 		border: 0;
 		margin: 0;
-		padding: 0;
+		padding-left: 0;
+		padding-right:0;
 		box-sizing: border-box;
 		display:block;
 	}
-		#blueone, #blue2 {
+		#blueone, #blue2, #orange1, #orange2 {
 		float:none;
 		display: block;
 		padding: 0;
@@ -191,13 +192,23 @@ body {
 		width: 100%;
 		border: 0;
 		margin: 0;
-		padding: 0;
+		padding-left: 0;
+		padding-right:0;
+		padding-top:150px;
 		box-sizing: border-box;
 		
 	}
 	
-
+	.contact-section {
+		background-color:#D3D3D3;
+		background-image:none;
+	}
 	
+	img {
+		 display: block;
+    margin-left: auto;
+    margin-right: auto;
+	}
 	p, h1, h2 {
 		text-align: left;
 		display: inline-block;
