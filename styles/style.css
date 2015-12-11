@@ -166,9 +166,8 @@ body {
 
 @media(max-width: 1000px)
 {
-#container2  {margin-right: 0; padding-right: 0; height: 440 px; }
+#container2  {margin-right: 0; padding-right: 0; height: 440px; }
 #widget {padding-left:0; padding-right: 2px;}
-#quiz {text-indent: 0; font-size: 80%;}
 
 	.services-section {
 		width: 100%;
